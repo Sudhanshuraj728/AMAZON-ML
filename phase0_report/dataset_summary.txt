@@ -1,0 +1,180 @@
+================================================================================
+AMAZON ML CHALLENGE 2026 - PHASE 0 DATASET RECONNAISSANCE
+================================================================================
+
+
+TRAIN DATA
+--------------------------------------------------------------------------------
+
+SOURCE1
+File size: 200.34 MB
+Rows: 2206821
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 0 (0.0000%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  US: 1,323,633 (59.98%)
+  India: 883,188 (40.02%)
+
+Name length:
+  min = 3
+  max = 105
+  sample avg = 24.08
+
+Address length:
+  min = 11
+  max = 256
+  sample avg = 52.19
+
+SOURCE2
+File size: 466.63 MB
+Rows: 5034616
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 168,967 (3.3561%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  US: 3,016,817 (59.92%)
+  India: 2,017,799 (40.08%)
+
+Name length:
+  min = 2
+  max = 104
+  sample avg = 25.08
+
+Address length:
+  min = 0
+  max = 249
+  sample avg = 46.11
+
+SOURCE3
+File size: 480.37 MB
+Rows: 5285603
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 175,916 (3.3282%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  US: 3,170,056 (59.98%)
+  India: 2,115,547 (40.02%)
+
+Name length:
+  min = 2
+  max = 123
+  sample avg = 25.24
+
+Address length:
+  min = 0
+  max = 240
+  sample avg = 46.70
+
+
+TEST DATA
+--------------------------------------------------------------------------------
+
+SOURCE1
+File size: 166.91 MB
+Rows: 1732544
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 0 (0.0000%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  India: 809,986 (46.75%)
+  US: 663,106 (38.27%)
+  France: 259,452 (14.98%)
+
+SOURCE2
+File size: 485.86 MB
+Rows: 4887273
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 129,408 (2.6479%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  India: 2,312,565 (47.32%)
+  US: 1,871,330 (38.29%)
+  France: 703,378 (14.39%)
+
+SOURCE3
+File size: 482.56 MB
+Rows: 5082316
+Columns: entity_id, business_name, business_address, country
+
+Missing values:
+  business_name: 0 (0.0000%)
+  business_address: 136,098 (2.6779%)
+  country: 0 (0.0000%)
+
+Country distribution:
+  India: 2,405,000 (47.32%)
+  US: 1,945,701 (38.28%)
+  France: 731,615 (14.40%)
+
+
+GROUND TRUTH
+--------------------------------------------------------------------------------
+Total S1 entities: 2,206,821
+Singletons: 123,247 (5.58%)
+Non-singletons: 2,083,574
+Total matches: 7,638,365
+Average matches/S1: 3.4613
+S2 matches: 3,693,619
+S3 matches: 3,944,746
+Entities with both S2 + S3: 1,776,047
+Entities with only S2: 143,029
+Entities with only S3: 164,498
+
+Match-count distribution:
+  0 matches: 123,247 S1 entities
+  1 matches: 119,157 S1 entities
+  2 matches: 375,212 S1 entities
+  3 matches: 530,841 S1 entities
+  4 matches: 484,115 S1 entities
+  5 matches: 321,957 S1 entities
+  6 matches: 164,868 S1 entities
+  7 matches: 63,968 S1 entities
+  8 matches: 18,680 S1 entities
+  9 matches: 4,205 S1 entities
+  10 matches: 534 S1 entities
+  11 matches: 37 S1 entities
+
+
+GROUND TRUTH EXAMPLES
+--------------------------------------------------------------------------------
+S1-965667	S2-681193310,S2-743505751,S3-775321672,S3-11291185,S3-860443364
+S1-55344266	S2-249013014,S2-197070651,S3-478195123,S3-384364074
+S1-343815751	S2-790675320,S2-479876582,S3-878454467
+S1-656753428	S2-153058913,S2-24659151,S3-679606215
+S1-102811957	S2-478959098,S2-553508714,S2-625774905,S3-728090388,S3-928796641,S3-449308785
+S1-18727616	S2-755677256,S3-187831601,S3-641489370,S3-476250621
+S1-318373630	S2-660036492,S3-804600254
+S1-86989137	S3-274817120,S3-312496301
+S1-29845983	S2-648035184,S3-588502663
+S1-789009573	S2-383871912,S3-74481402,S3-576451439
+S1-730934468	S2-356983532,S3-352439310
+S1-7293388	S2-7028416,S2-442723188,S2-157073701,S3-523120965
+S1-546142636	S2-487600131,S2-582477216,S2-392804085,S3-200008747,S3-729771680,S3-249331830
+S1-274126313	S2-736616474,S2-680265918,S2-51486805,S3-925631694,S3-461175723,S3-850112871
+S1-145361722	S2-120366543,S2-939389287,S3-96572514
+S1-503957000	S2-994658326,S2-235117490,S2-353308450,S2-173295926,S3-858763214,S3-33665521,S3-555791452
+S1-692000596	S2-580419223,S3-164220452
+S1-561341312	S2-483615364,S3-619529814
+S1-777597828	S2-836452886,S3-413669121
+S1-282467635	S2-938895481,S3-138350041

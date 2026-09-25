@@ -1,0 +1,17 @@
+{
+  "total_forensic_rows": 14500,
+  "matched_pairs": 14000,
+  "source_distribution": {
+    "": 500,
+    "S3": 7309,
+    "S2": 6691
+  },
+  "country_distribution": {
+    "US": 8703,
+    "India": 5797
+  },
+  "exact_raw_name_rate": 0.10478571428571429,
+  "exact_raw_address_rate": 0.07157142857142858,
+  "empty_s1_address_rate": 0.0,
+  "empty_matched_address_rate": 0.04642857142857143
+}
